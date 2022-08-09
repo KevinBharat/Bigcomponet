@@ -14,10 +14,13 @@
         android:theme="@style/Theme.Bigcomponet"
         tools:targetApi="31">
         <activity
-            android:name=".bottom_nav_Activity"
+            android:name=".Activity.Typeof_Menu_Activity"
             android:exported="false" />
         <activity
-            android:name=".WhatsappActivity"
+            android:name=".Activity.bottom_nav_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.WhatsappActivity"
             android:exported="false" />
         <activity
             android:name=".Activity.CustomTabActivity"

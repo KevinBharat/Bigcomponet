@@ -1,4 +1,4 @@
-package bigcomponet.hwork.bigcomponet.Desige;
+package bigcomponet.hwork.bigcomponet.Activity;
 
 import android.content.Context;
 import android.graphics.Canvas;

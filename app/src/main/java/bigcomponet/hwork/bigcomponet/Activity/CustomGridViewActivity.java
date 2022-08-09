@@ -1,4 +1,4 @@
-package bigcomponet.hwork.bigcomponet.Desige;
+package bigcomponet.hwork.bigcomponet.Activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -10,7 +10,7 @@ import android.widget.Toast;
 
 import java.util.ArrayList;
 
-import bigcomponet.hwork.bigcomponet.Model.GridBaseAdapter;
+import bigcomponet.hwork.bigcomponet.BaseAdapter.GridBaseAdapter;
 import bigcomponet.hwork.bigcomponet.Model.GridModel;
 import bigcomponet.hwork.bigcomponet.R;
 

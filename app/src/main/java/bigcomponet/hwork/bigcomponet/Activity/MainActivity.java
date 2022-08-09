@@ -1,4 +1,4 @@
-package bigcomponet.hwork.bigcomponet.Desige;
+package bigcomponet.hwork.bigcomponet.Activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                Intent i = new Intent(MainActivity.this,CustomGridViewActivity.class);
+                Intent i = new Intent(MainActivity.this,CustomTabActivity.class);
                 startActivity(i);
                 finish();
             }

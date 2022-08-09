@@ -1,4 +1,4 @@
-package bigcomponet.hwork.bigcomponet.Desige;
+package bigcomponet.hwork.bigcomponet.Activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -8,7 +8,7 @@ import android.widget.ListView;
 import java.util.ArrayList;
 
 import bigcomponet.hwork.bigcomponet.Model.Model;
-import bigcomponet.hwork.bigcomponet.Model.MyBaseAdapter;
+import bigcomponet.hwork.bigcomponet.BaseAdapter.MyBaseAdapter;
 import bigcomponet.hwork.bigcomponet.R;
 
 public class CustomListViewActivity extends AppCompatActivity {

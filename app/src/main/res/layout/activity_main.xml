@@ -3,9 +3,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Desige.MainActivity"
+    tools:context=".Activity.MainActivity"
     android:orientation="vertical">
-    <bigcomponet.hwork.bigcomponet.Desige.GifImageView
+    <bigcomponet.hwork.bigcomponet.Activity.GifImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/img_gif"

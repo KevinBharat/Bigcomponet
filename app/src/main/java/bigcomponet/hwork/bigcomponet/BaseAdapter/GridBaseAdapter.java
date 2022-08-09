@@ -1,4 +1,5 @@
-package bigcomponet.hwork.bigcomponet.Model;
+package bigcomponet.hwork.bigcomponet.BaseAdapter;
+
 import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -9,24 +10,24 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 
+import bigcomponet.hwork.bigcomponet.Model.GridModel;
 import bigcomponet.hwork.bigcomponet.R;
 
-public class MyBaseAdapter extends BaseAdapter {
+public class GridBaseAdapter extends BaseAdapter {
     Context context;
-    ArrayList<Model> modelArrayList;
-
-    public MyBaseAdapter(Context context, ArrayList<Model> modelArrayList) {
+    ArrayList<GridModel> GridModelArrayList;
+    public GridBaseAdapter(Context context,  ArrayList<GridModel> GridModelArrayList) {
         this.context = context;
-        this.modelArrayList = modelArrayList;
+        this.GridModelArrayList = GridModelArrayList;
     }
     @Override
     public int getCount() {
-        return modelArrayList.size();
+        return GridModelArrayList.size();
     }
 
     @Override
     public Object getItem(int i) {
-        return modelArrayList.get(i);
+        return GridModelArrayList.get(i);
     }
 
     @Override
@@ -38,17 +39,15 @@ public class MyBaseAdapter extends BaseAdapter {
     public View getView(int i, View view, ViewGroup viewGroup) {
 
         LayoutInflater layoutInflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-
-        view = layoutInflater.inflate(R.layout.raw_cutm_list,null);
+        view = layoutInflater.inflate(R.layout.raw_cutm_grid,null);
 
         ImageView imgData = view.findViewById(R.id.img_data);
+        TextView Subtiutle = view.findViewById(R.id.tvdata);
 
-        TextView tvData = view.findViewById(R.id.tv_data);
+        GridModel GridModel = GridModelArrayList.get(i);
 
-        Model langModel = modelArrayList.get(i);
-
-        imgData.setImageResource(modelArrayList.get(i).getImgLang());
-        tvData.setText(modelArrayList.toString());
+        imgData.setImageResource(GridModelArrayList.get(i).getImgLang());
+        Subtiutle.setText(GridModel.getStrLang());
         return view;
     }
 }
